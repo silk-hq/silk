@@ -1,0 +1,23 @@
+.Card-view {
+   /* SELF-LAYOUT */
+   z-index: 1;
+}
+
+.Card-content {
+   /* SELF-LAYOUT */
+   width: 97%;
+   height: auto;
+   max-width: 580px;
+   aspect-ratio: 8 / 10;
+
+   /* APPEARANCE */
+   background-color: transparent;
+
+   /* INNER-LAYOUT */
+   padding: var(--size-3);
+}
+@media (min-width: 550px) {
+   .Card-content {
+      aspect-ratio: 9 / 10;
+   }
+}

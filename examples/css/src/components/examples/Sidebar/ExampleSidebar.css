@@ -1,0 +1,105 @@
+.ExampleSidebar-root {
+  --padding: var(--size-10);
+
+  /* INNER-LAYOUT */
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  /* TEXT */
+  user-select: none;
+}
+
+.ExampleSidebar-header {
+  /* APPEARANCE */
+  background-color: var(--neutral-2);
+  border-top: var(--thickness-1) solid var(--neutral-4);
+  border-bottom: var(--thickness-1) solid var(--neutral-4);
+
+  /* INNER-LAYOUT */
+  padding-inline: var(--padding);
+  padding-block: calc(env(safe-area-inset-top, 0px) + var(--padding))
+    var(--padding);
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--size-1) var(--size-6);
+}
+
+.ExampleSidebar-illustration {
+  /* SELF-LAYOUT */
+  grid-row: 1 / -1;
+  width: 50px;
+  height: 50px;
+
+  /* APPEARANCE */
+  border-radius: var(--radius-5);
+  background-image: var(--blue-illustration-1-gradient);
+  background-origin: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ExampleSidebar-orgName {
+  /* TEXT */
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-7);
+  color: var(--gray-9);
+}
+
+.ExampleSidebar-orgEmail {
+  /* TEXT */
+  font-size: var(--font-size-2);
+  color: var(--gray-6);
+}
+
+.ExampleSidebar-scrollContent {
+  /* INNER-LAYOUT */
+  padding: var(--padding) var(--padding)
+    calc(env(safe-area-inset-top, 0px) + var(--padding));
+  display: grid;
+  gap: var(--size-14);
+}
+
+.ExampleSidebar-listGroup {
+  display: grid;
+  gap: var(--size-10);
+}
+
+.ExampleSidebar-listTitle {
+  /* TEXT */
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-6);
+  text-transform: uppercase;
+  color: var(--gray-5);
+}
+
+.ExampleSidebar-list {
+  /* INNER-LAYOUT */
+  padding: 0;
+  display: grid;
+  gap: var(--size-9);
+}
+
+.ExampleSidebar-item {
+  /* APPEARANCE */
+  list-style-type: none;
+
+  /* INNER-LAYOUT */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: var(--size-6);
+
+  /* TEXT */
+  color: var(--gray-8);
+}
+
+.ExampleSidebar-itemIcon {
+  /* TEXT */
+  font-size: 0;
+}
+
+.ExampleSidebar-itemText {
+  /* TEXT */
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-5);
+}

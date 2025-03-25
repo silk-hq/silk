@@ -1,0 +1,106 @@
+.ExampleTopSheet-root {
+  /* INNER-LAYOUT */
+  padding-inline: var(--size-10);
+  padding-block: calc(env(safe-area-inset-top, 0px) + var(--size-17))
+    var(--size-17);
+  display: grid;
+}
+@media (min-width: 600px) {
+  .ExampleTopSheet-root {
+    /* SELF-LAYOUT */
+    padding-block: calc(env(safe-area-inset-top, 0px) + var(--size-18))
+      var(--size-18);
+  }
+}
+
+.ExampleTopSheet-dismissTrigger {
+  /* SELF-LAYOUT */
+  position: absolute;
+  top: max(env(safe-area-inset-top, 0px), var(--size-8));
+  right: var(--size-8);
+}
+@media (min-width: 600px) {
+  .ExampleTopSheet-dismissTrigger {
+    /* SELF-LAYOUT */
+    top: max(env(safe-area-inset-top, 0px), var(--size-9));
+    right: var(--size-9);
+  }
+}
+
+.ExampleTopSheet-information {
+  /* INNER-LAYOUT */
+  display: grid;
+  gap: var(--size-12);
+  justify-items: center;
+}
+
+.ExampleTopSheet-title {
+  /* SELF-LAYOUT */
+  justify-self: center;
+  max-width: 400px;
+
+  /* TEXT */
+  text-align: center;
+  text-wrap: balance;
+  line-height: var(--line-height-2);
+  font-size: var(--font-size-8);
+  font-weight: var(--font-weight-8);
+  color: var(--gray-9);
+}
+@media (min-width: 600px) {
+  .ExampleTopSheet-title {
+    font-size: var(--font-size-9);
+  }
+}
+
+.ExampleTopSheet-illustration {
+  /* SELF-LAYOUT */
+  width: min(66%, 280px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+
+  /* APPEARANCE */
+  border-radius: var(--radius-6);
+  background-image: var(--red-illustration-1-gradient);
+  background-origin: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ExampleTopSheet-description {
+  /* SELF-LAYOUT */
+  justify-self: center;
+  max-width: 500px;
+
+  /* TEXT */
+  text-align: center;
+  text-wrap: balance;
+  line-height: var(--line-height-4);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-5);
+  color: var(--gray-6);
+}
+@media (min-width: 600px) {
+  .ExampleTopSheet-description {
+    /* TEXT */
+    font-size: var(--font-size-5);
+  }
+}
+
+.ExampleTopSheet-validateTrigger {
+  /* SELF-LAYOUT */
+  height: var(--size-17);
+
+  /* APPEARANCE */
+  border-radius: var(--radius-full);
+  appearance: none;
+  border: none;
+  background-color: var(--gray-9);
+
+  /* INNER-LAYOUT */
+  padding-inline: var(--size-14);
+
+  /* TEXT */
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-6);
+  color: var(--white);
+}

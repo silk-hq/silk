@@ -1,0 +1,107 @@
+.ExampleCard-root {
+  /* SELF-LAYOUT */
+  height: 100%;
+
+  /* APPEARANCE */
+  border-radius: var(--radius-8);
+  overflow: clip;
+  background-color: white;
+  box-shadow: var(--shadow-4);
+
+  /* INNER-LAYOUT */
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.ExampleCard-dismissTrigger {
+  /* SELF-LAYOUT */
+  position: absolute;
+  justify-self: end;
+  top: max(env(safe-area-inset-top, 0px), var(--size-8));
+  right: var(--size-8);
+}
+
+.ExampleCard-illustration {
+  /* SELF-LAYOUT */
+  width: 100%;
+  height: 100%;
+
+  /* APPEARANCE */
+  background-image: var(--blue-illustration-1-gradient);
+  background-origin: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ExampleCard-information {
+  /* SELF-LAYOUT */
+  max-width: min(90%, 500px);
+
+  /* INNER-LAYOUT */
+  padding: var(--size-12) var(--size-10);
+  display: grid;
+  gap: var(--size-10);
+  justify-items: center;
+  align-content: center;
+}
+
+.ExampleCard-title {
+  /* SELF-LAYOUT */
+  justify-self: center;
+
+  /* TEXT */
+  text-align: center;
+  text-wrap: balance;
+  line-height: var(--line-height-2);
+  font-size: var(--font-size-7);
+  font-weight: var(--font-weight-8);
+  color: var(--gray-9);
+}
+@media (min-width: 600px) {
+  .ExampleCard-title {
+    /* TEXT */
+    font-size: var(--font-size-8);
+  }
+}
+
+.ExampleCard-description {
+  /* SELF-LAYOUT */
+  justify-self: center;
+
+  /* TEXT */
+  text-align: center;
+  text-wrap: balance;
+  text-wrap: pretty;
+  line-height: var(--line-height-4);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-5);
+  color: var(--gray-6);
+}
+@media (min-width: 600px) {
+  .ExampleCard-description {
+    /* TEXT */
+    font-size: var(--font-size-5);
+  }
+}
+
+.ExampleCard-validateTrigger {
+  /* SELF-LAYOUT */
+  margin-top: var(--size-4);
+  height: var(--size-17);
+
+  /* APPEARANCE */
+  border-radius: var(--radius-full);
+  appearance: none;
+  border: none;
+  background-color: var(--gray-9);
+
+  /* INNER-LAYOUT */
+  padding-inline: var(--size-14);
+
+  /* TEXT */
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-6);
+  color: var(--white);
+}

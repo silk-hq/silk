@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 0px;
+  min-height: 0px;
+
+  -webkit-tap-highlight-color: transparent; /* Removes the grey highlight on clickable elements on iOS */
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
+  -ms-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in IE */
+}
+
+button {
+  user-select: none;
+}
+body,
+button,
+input,
+textarea {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+.platform-ios :focus-visible,
+.platform-ipados :focus-visible {
+  outline: none;
+}
+
+:root {
+  font-size: 16px;
+
+  --size-0: 0px;
+  --size-1: 0.125rem; /* 2px */
+  --size-2: 0.25rem; /* 4px */
+  --size-3: 0.375rem; /* 6px */
+  --size-4: 0.5rem; /* 8px */
+  --size-5: 0.625rem; /* 10px */
+  --size-6: 0.75rem; /* 12px */
+  --size-7: 0.875rem; /* 14px */
+  --size-8: 1rem; /* 16px */
+  --size-9: 1.25rem; /* 20px */
+  --size-10: 1.5rem; /* 24px */
+  --size-11: 1.75rem; /* 28px */
+  --size-12: 2rem; /* 32px */
+  --size-13: 2.25rem; /* 36px */
+  --size-14: 2.5rem; /* 40px */
+  --size-15: 2.75rem; /* 44px */
+  --size-16: 3rem; /* 48px */
+  --size-17: 3.5rem; /* 56px */
+  --size-18: 4rem; /* 64px */
+  --size-19: 5rem; /* 80px */
+  --size-20: 6rem; /* 96px */
+  --size-21: 7rem; /* 112px */
+  --size-22: 8rem; /* 128px */
+  --size-23: 9rem; /* 144px */
+  --size-24: 10rem; /* 160px */
+  --size-25: 11rem; /* 176px */
+  --size-26: 12rem; /* 192px */
+  --size-27: 13rem; /* 208px */
+  --size-28: 14rem; /* 224px */
+  --size-29: 15rem; /* 240px */
+  --size-30: 16rem; /* 256px */
+  --size-31: 18rem; /* 288px */
+  --size-32: 20rem; /* 320px */
+  --size-33: 24rem; /* 384px */
+
+  --thickness-1: 1px;
+  --thickness-2: 2px;
+  --thickness-3: 4px;
+  --thickness-4: 8px;
+
+  --radius-none: 0px;
+  --radius-1: 2px;
+  --radius-2: 4px;
+  --radius-3: 6px;
+  --radius-4: 8px;
+  --radius-5: 12px;
+  --radius-6: 16px;
+  --radius-7: 24px;
+  --radius-8: 36px;
+  --radius-full: 9999px;
+
+  --white: #fff;
+  --black: #000;
+
+  --gray-1: rgb(249 250 251);
+  --gray-2: rgb(243 244 246);
+  --gray-3: rgb(229 231 235);
+  --gray-4: rgb(209 213 219);
+  --gray-5: rgb(156 163 175);
+  --gray-6: rgb(107 114 128);
+  --gray-7: rgb(75 85 99);
+  --gray-8: rgb(55 65 81);
+  --gray-9: rgb(31 41 55);
+  --gray-10: rgb(17 24 39);
+  --gray-11: rgb(3 7 18);
+
+  --slate-1: rgb(248, 250, 252);
+  --slate-2: rgb(241, 245, 249);
+  --slate-3: rgb(226, 232, 240);
+  --slate-4: rgb(203, 213, 225);
+  --slate-5: rgb(148, 163, 184);
+  --slate-6: rgb(100, 116, 139);
+  --slate-7: rgb(71, 85, 105);
+  --slate-8: rgb(51, 65, 85);
+  --slate-9: rgb(30, 41, 59);
+  --slate-10: rgb(15, 23, 42);
+  --slate-11: rgb(2, 6, 23);
+
+  --neutral-1: rgb(250, 250, 250);
+  --neutral-2: rgb(245, 245, 245);
+  --neutral-3: rgb(229, 229, 229);
+  --neutral-4: rgb(212, 212, 212);
+  --neutral-5: rgb(163, 163, 163);
+  --neutral-6: rgb(115, 115, 115);
+  --neutral-7: rgb(82, 82, 82);
+  --neutral-8: rgb(64, 64, 64);
+  --neutral-9: rgb(38, 38, 38);
+  --neutral-10: rgb(23, 23, 23);
+  --neutral-11: rgb(10, 10, 10);
+
+  --shadow-1: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-2: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-3: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-4: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-5: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-6: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+  --font-size-1: 0.75rem; /* 12px */
+  --font-size-2: 0.875rem; /* 14px */
+  --font-size-3: 1rem; /* 16px */
+  --font-size-4: 1.125rem; /* 18px */
+  --font-size-5: 1.25rem; /* 20px */
+  --font-size-6: 1.5rem; /* 24px */
+  --font-size-7: 1.875rem; /* 30px */
+  --font-size-8: 2.25rem; /* 36px */
+  --font-size-9: 3rem; /* 48px */
+  --font-size-10: 3.75rem; /* 60px */
+  --font-size-11: 4.5rem; /* 72px */
+  --font-size-12: 6rem; /* 96px */
+  --font-size-13: 8rem; /* 128px */
+
+  --line-height-1: 0.95;
+  --line-height-2: 1.1;
+  --line-height-3: 1.25;
+  --line-height-4: 1.375;
+  --line-height-5: 1.5;
+  --line-height-6: 1.75;
+  --line-height-7: 2;
+
+  --font-weight-1: 100;
+  --font-weight-2: 200;
+  --font-weight-3: 300;
+  --font-weight-4: 400;
+  --font-weight-5: 500;
+  --font-weight-6: 600;
+  --font-weight-7: 700;
+  --font-weight-8: 800;
+  --font-weight-9: 900;
+
+  --blue-scenery-gradient: conic-gradient(
+    from -200deg at 50% 50%,
+    rgba(83, 243, 224, 1),
+    rgba(203, 251, 246, 1),
+    rgba(83, 243, 224, 1)
+  );
+  --blue-scenery-2-gradient: conic-gradient(
+    from -200deg at 50% 50%,
+    rgba(83, 243, 224, 0.8),
+    rgba(203, 251, 246, 1),
+    rgba(83, 243, 224, 0.8)
+  );
+  --blue-illustration-1-gradient: conic-gradient(
+    from -140deg at 100% 100%,
+    rgba(36, 239, 215, 1),
+    rgba(179, 250, 241, 1) 120deg,
+    rgba(36, 239, 215, 1)
+  );
+  --blue-illustration-2-gradient: conic-gradient(
+    from -140deg at 100% 100%,
+    rgba(15, 209, 187, 1),
+    rgba(107, 245, 228, 1) 120deg,
+    rgba(15, 209, 187, 1)
+  );
+  --red-scenery-gradient: conic-gradient(
+    from -200deg at 50% 50%,
+    rgba(229, 54, 54, 1),
+    rgba(247, 188, 188, 1),
+    rgba(229, 54, 54, 1)
+  );
+  --red-scenery-2-gradient: conic-gradient(
+    from -200deg at 50% 50%,
+    rgba(229, 54, 54, 0.75),
+    rgba(247, 188, 188, 1),
+    rgba(229, 54, 54, 0.75)
+  );
+  --red-illustration-1-gradient: conic-gradient(
+    from -140deg at 100% 100%,
+    rgba(239, 36, 36, 1),
+    rgba(250, 179, 179, 1) 120deg,
+    rgba(239, 36, 36, 1)
+  );
+  --red-illustration-2-gradient: conic-gradient(
+    from -140deg at 100% 100%,
+    rgba(209, 15, 15, 1),
+    rgba(245, 107, 107, 1) 120deg,
+    rgba(209, 15, 15, 1)
+  );
+  --green-scenery-gradient: conic-gradient(
+    from -200deg at 50% 50%,
+    #53f395,
+    #cbfbdf,
+    #53f395
+  );
+  --green-scenery-2-gradient: conic-gradient(
+    from -200deg at 50% 50%,
+    rgba(83, 243, 149, 0.8),
+    #cbfbdf,
+    rgba(83, 243, 149, 0.8)
+  );
+  --green-illustration-1-gradient: conic-gradient(
+    from -140deg at 100% 100%,
+    rgba(36, 239, 87, 1),
+    rgba(179, 250, 196, 1) 120deg,
+    rgba(36, 239, 87, 1)
+  );
+  --green-illustration-2-gradient: conic-gradient(
+    from -140deg at 100% 100%,
+    rgba(15, 209, 64, 1),
+    rgba(107, 245, 142, 1) 120deg,
+    rgba(15, 209, 64, 1)
+  );
+}

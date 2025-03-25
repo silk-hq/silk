@@ -1,0 +1,337 @@
+.ExampleSheetWithKeyboard-root {
+  /* SELF-LAYOUT */
+  height: 100%;
+
+  /* APPEARANCE */
+  border-radius: var(--radius-7) var(--radius-7) 0 0;
+  overflow: hidden;
+  background-color: white;
+
+  /* INNER-LAYOUT */
+  container-type: size;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+@media (min-width: 800px) {
+  .ExampleSheetWithKeyboard-root {
+    /* APPEARANCE */
+    border-radius: var(--radius-7);
+
+    box-shadow: var(--shadow-4);
+  }
+}
+
+.ExampleSheetWithKeyboard-header {
+  /* SELF-LAYOUT */
+  height: 57px;
+
+  /* APPEARANCE */
+  border-bottom: var(--thickness-1) solid var(--gray-3);
+
+  /* INNER-LAYOUT */
+  position: relative;
+  padding-inline: var(--size-9);
+  display: grid;
+  grid-template-columns: 80px 1fr 80px;
+  align-items: center;
+  gap: var(--size-6);
+}
+@media (min-width: 800px) {
+  .ExampleSheetWithKeyboard-header {
+    /* SELF-LAYOUT */
+    height: 53px;
+  }
+}
+
+.ExampleSheetWithKeyboard-cancelButton {
+  /* SELF-LAYOUT */
+  justify-self: start;
+
+  /* APPEARANCE */
+  border-radius: var(--radius-3);
+  outline-offset: 5px;
+  border: none;
+  appearance: none;
+  background-color: transparent;
+
+  /* INNER-LAYOUT */
+  padding: 0;
+
+  /* TEXT */
+  text-box: trim-both cap alphabetic;
+  font-size: 17.25px;
+  font-weight: var(--font-weight-5);
+  color: var(--gray-8);
+  color: rgb(52, 159, 13);
+}
+
+.ExampleSheetWithKeyboard-title {
+  /* SELF-LAYOUT */
+  justify-self: center;
+
+  /* TEXT */
+  text-box: trim-both cap alphabetic;
+  font-size: 17.25px;
+  font-weight: 620;
+  color: var(--gray-9);
+}
+
+.ExampleSheetWithKeyboard-saveButton {
+  /* SELF-LAYOUT */
+  justify-self: end;
+
+  /* APPEARANCE */
+  border-radius: var(--radius-3);
+  outline-offset: 5px;
+  border: none;
+  appearance: none;
+  background-color: transparent;
+
+  /* INNER-LAYOUT */
+  padding: 0;
+
+  /* TEXT */
+  text-box: trim-both cap alphabetic;
+  font-size: 17.25px;
+  font-weight: var(--font-weight-6);
+  color: var(--gray-8);
+  color: rgb(52, 159, 13);
+}
+
+.ExampleSheetWithKeyboard-scrollView {
+  background-color: var(--gray-1);
+}
+
+.ExampleSheetWithKeyboard-scrollContent {
+  --padding: var(--size-9);
+
+  /* INNER-LAYOUT */
+  display: grid;
+  align-content: start;
+}
+@container (min-width: 780px) {
+  .ExampleSheetWithKeyboard-scrollContent {
+    --padding: var(--size-10);
+  }
+}
+
+.ExampleSheetWithKeyboard-galleryScrollView {
+  /* SELF-LAYOUT */
+  margin-top: -400px;
+
+  /* APPEARANCE */
+  background-color: white;
+
+  /* INNER-LAYOUT */
+  padding-top: 400px;
+
+  /* TRANSFORMATION */
+  transform: translateY(0.0001px);
+}
+
+.ExampleSheetWithKeyboard-galleryScrollContent {
+  /* INNER-LAYOUT */
+  padding: var(--padding);
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--size-4);
+
+  /* TEXT */
+  font-size: 0;
+}
+
+.ExampleSheetWithKeyboard-image {
+  /* SELF-LAYOUT */
+  width: 240px;
+  height: 240px;
+
+  /* APPEARANCE */
+  border-radius: var(--radius-6);
+  background-image: var(--blue-illustration-1-gradient);
+  background-origin: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ExampleSheetWithKeyboard-info {
+  /* APPEARANCE */
+  border-top: 1px solid var(--gray-3);
+
+  /* INNER-LAYOUT */
+  padding-top: var(--size-9);
+  padding-bottom: var(--size-12);
+  display: grid;
+  gap: var(--size-9);
+}
+@container (min-width: 780px) {
+  .ExampleSheetWithKeyboard-info {
+    /* INNER-LAYOUT */
+    padding-bottom: var(--padding);
+    gap: var(--size-10);
+  }
+}
+
+.ExampleSheetWithKeyboard-details {
+  /* INNER-LAYOUT */
+  padding-inline: var(--padding);
+
+  /* TEXT */
+  font-size: var(--font-size-7);
+  font-weight: var(--font-weight-8);
+  color: var(--gray-10);
+}
+@container (min-width: 780px) {
+  .ExampleSheetWithKeyboard-details {
+    /* TEXT */
+    font-size: var(--font-size-8);
+  }
+}
+
+.ExampleSheetWithKeyboard-form {
+  /* INNER-LAYOUT */
+  padding-inline: var(--padding);
+  display: grid;
+  gap: var(--size-9);
+}
+@container (min-width: 780px) {
+  .ExampleSheetWithKeyboard-form {
+    /* INNER-LAYOUT */
+    grid-template-columns: 1fr 1fr;
+    gap: var(--size-10);
+  }
+}
+
+.ExampleSheetWithKeyboard-field {
+  /* INNER-LAYOUT */
+  display: grid;
+
+  /* TEXT */
+  user-select: none;
+}
+@container (min-width: 780px) {
+  .ExampleSheetWithKeyboard-field.fieldType-color {
+    /* SELF-LAYOUT */
+    order: 1;
+  }
+}
+@container (min-width: 780px) {
+  .ExampleSheetWithKeyboard-field.fieldType-description {
+    /* SELF-LAYOUT */
+    order: 2;
+    grid-column: 1 / -1;
+  }
+}
+
+.ExampleSheetWithKeyboard-label {
+  /* SELF-LAYOUT */
+  margin-bottom: var(--size-2);
+
+  /* TEXT */
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-5);
+  color: var(--gray-8);
+
+  /* INTERACTIVITY */
+  pointer-events: none;
+}
+
+.ExampleSheetWithKeyboard-labelDescription {
+  /* SELF-LAYOUT */
+  margin-bottom: var(--size-5);
+
+  /* TEXT */
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-4);
+  color: var(--gray-5);
+}
+
+.ExampleSheetWithKeyboard-input {
+  /* SELF-LAYOUT */
+  height: var(--size-15);
+
+  /* APPEARANCE */
+  border-radius: var(--radius-5);
+  border: 1px solid var(--gray-4);
+
+  /* INNER-LAYOUT */
+  padding: 0 var(--size-6);
+
+  /* TEXT */
+  appearance: none;
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-5);
+  color: var(--gray-8);
+
+  /* FIELD */
+  caret-color: rgb(66, 200, 18);
+}
+
+.ExampleSheetWithKeyboard-input::placeholder {
+  /* TEXT */
+  color: var(--gray-5);
+}
+
+.ExampleSheetWithKeyboard-colorInputWrapper {
+  /* SELF-LAYOUT */
+  height: min-content;
+  width: min-content;
+
+  /* INNER-LAYOUT */
+  position: relative;
+}
+
+.ExampleSheetWithKeyboard-colorInputs {
+  /* SELF-LAYOUT */
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: var(--size-5);
+}
+
+.ExampleSheetWithKeyboard-colorInput {
+  /* SELF-LAYOUT */
+  height: var(--size-11);
+  width: var(--size-11);
+
+  /* APPEARANCE */
+  appearance: none;
+  border: 0;
+  background-color: transparent;
+
+  /* TRANSFORMATION */
+  opacity: 0;
+}
+.ExampleSheetWithKeyboard-colorInputReplacement {
+  /* SELF-LAYOUT */
+  position: absolute;
+  inset: 0;
+
+  /* APPEARANCE */
+  border-radius: var(--radius-full);
+  background-color: var(--color);
+  box-shadow: inset 0 0 0 var(--thickness-1) rgba(0, 0, 0, 0.15);
+
+  /* INTERACTIVITY */
+  pointer-events: none;
+}
+
+.ExampleSheetWithKeyboard-textarea {
+  /* APPEARANCE */
+  border-radius: var(--radius-5);
+  border: 1px solid var(--gray-4);
+
+  /* INNER-LAYOUT */
+  padding: var(--size-6);
+
+  /* TEXT */
+  appearance: none;
+  font-size: var(--font-size-3);
+  color: var(--gray-9);
+
+  /* FIELD */
+  caret-color: rgb(66, 200, 18);
+}
+
+.ExampleSheetWithKeyboard-textarea::placeholder {
+  /* TEXT */
+  color: var(--gray-5);
+}
