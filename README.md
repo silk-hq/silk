@@ -9,6 +9,10 @@ Bring your web app to a whole new level with the most advanced swipeable sheet e
 
 <br />
 
+## General information
+
+Find demos and information about the library and licensing on [our website](https://silkhq.co).
+
 ## Documentation
 
 Find our full documentation [here](https://silkhq.notion.site/Silk-Components-fad7232e08a24cf6bf9008749cc09879).
@@ -18,6 +22,8 @@ Find our full documentation [here](https://silkhq.notion.site/Silk-Components-fa
 Find all basic examples in the [dedicated GitHub repository](https://github.com/silk-hq/basic-examples-css).
 <br />
 See them in action in the [CodeSandbox](https://codesandbox.io/p/github/silk-hq/basic-examples-css/main).
+<br />
+Advanced examples are made available upon purchase of a Commercial License.
 
 ## Bug reports
 
