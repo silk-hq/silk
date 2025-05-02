@@ -3,15 +3,20 @@
   Native‑like swipeable sheets on the web
 </h3>
 <br />
-<p align="center">
-Bring your web app to a whole new level with the most advanced swipeable sheet ever engineered for the web. For React.
-</p>
 
-<br />
+Welcome to the community repository for Silk ([silkhq.co](https://silkhq.co)). Use this space to report issues, suggest features, get help, or connect with other Silk users.
 
-## General information
+## Bug reports
 
-Find demos and information about the library and licensing on [our website](https://silkhq.co).
+Encountered an issue with Silk? Let us know by opening a ticket on the [Issues page](https://github.com/silk-hq/community/issues).
+
+## Feature requests
+
+Is something missing from Silk that you need? Let us know by submitting a feature request on the [Issues page](https://github.com/silk-hq/community/issues).
+
+## Questions
+
+Need help or want to chat about how you're using Silk? Join the conversation on the [Discussions page](https://github.com/silk-hq/community/discussions).
 
 ## Documentation
 
@@ -25,10 +30,6 @@ See them in action in the [CodeSandbox](https://codesandbox.io/p/github/silk-hq/
 <br />
 Advanced examples are made available upon purchase of a Commercial License.
 
-## Bug reports
+## General information
 
-Please report any bug you encounter on our [GitHub Issues page](https://github.com/silk-hq/community/issues).
-
-## Community
-
-Join our community to ask for help, discuss features, or share your experiences related to Silk. You can engage with other users and contributors on our [GitHub Discussions page](https://github.com/silk-hq/community/discussions).
+For demos, information about the library and licensing details, visit [silkhq.co](https://silkhq.co).
