@@ -14,7 +14,7 @@ Encountered an issue with Silk? Let us know by opening a ticket on the [Issues p
 
 Is something missing from Silk that you need? Let us know by submitting a feature request on the [Issues page](https://github.com/silk-hq/community/issues).
 
-## Questions
+## Questions & Discussions
 
 Need help or want to chat about how you're using Silk? Join the conversation on the [Discussions page](https://github.com/silk-hq/community/discussions).
 
