@@ -6,11 +6,11 @@
 
 Welcome to the community repository for Silk ([silkhq.co](https://silkhq.co)). Use this space to report issues, suggest features, get help, or connect with other Silk users.
 
-## Bug reports
+## Bug Reports
 
 Encountered an issue with Silk? Let us know by opening a ticket on the [Issues page](https://github.com/silk-hq/community/issues).
 
-## Feature requests
+## Feature Requests
 
 Is something missing from Silk that you need? Let us know by submitting a feature request on the [Issues page](https://github.com/silk-hq/community/issues).
 
@@ -30,6 +30,6 @@ See them in action in the [CodeSandbox](https://codesandbox.io/p/github/silk-hq/
 <br />
 Advanced examples are made available upon purchase of a Commercial License.
 
-## General information
+## General Info
 
 For demos, information about the library and licensing details, visit [silkhq.co](https://silkhq.co).
