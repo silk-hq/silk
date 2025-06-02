@@ -4,7 +4,7 @@
 </h3>
 <br />
 
-Welcome to the repository for Silk ([silkhq.co](https://silkhq.co)). Find basics examples in the dedicated directories, and use this space to report issues, suggest features, get help, or connect with other Silk users.
+Welcome to the repository for Silk ([silkhq.co](https://silkhq.co)). Find basic examples in the dedicated directories, and use this space to report issues, suggest features, get help, or connect with other Silk users.
 
 ## Examples
 
