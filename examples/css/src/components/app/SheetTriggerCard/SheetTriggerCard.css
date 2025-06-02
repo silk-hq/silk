@@ -1,0 +1,147 @@
+.SheetTriggerCard-root {
+  /* SELF-LAYOUT */
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  border: 0;
+
+  /* APPEARANCE */
+  box-shadow: var(--shadow-4);
+  appearance: none;
+  border-radius: var(--radius-7);
+  background-origin: border-box;
+
+  /* INTERACTIVITY */
+  user-select: none;
+
+  /* INNER-LAYOUT */
+  padding: 0;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  text-align: left;
+
+  /* TEXT */
+  font-size: 0;
+  text-decoration: none;
+}
+.SheetTriggerCard-root.color\:blue {
+  /* APPEARANCE */
+  background-image: var(--blue-scenery-gradient);
+}
+.SheetTriggerCard-root.color\:red {
+  /* APPEARANCE */
+  background-image: var(--red-scenery-gradient);
+}
+.SheetTriggerCard-root.color\:green {
+  /* APPEARANCE */
+  background-image: var(--green-scenery-gradient);
+}
+
+.SheetTriggerCard-root::after {
+  content: "";
+  /* INNER-LAYOUT */
+  position: absolute;
+  inset: 0;
+
+  /* APPEARANCE */
+  border-radius: var(--radius-7);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.SheetTriggerCard-innerShadowClipper {
+  grid-area: 1 / -1;
+  align-self: stretch;
+  position: relative;
+  overflow: hidden;
+  overflow: clip;
+}
+
+.SheetTriggerCard-innerShadow {
+  position: absolute;
+  bottom: -50%;
+  height: 50%;
+  width: 100%;
+  box-shadow: 0 -6px 65px 0 rgb(0, 0, 0, 0.09);
+}
+
+.SheetTriggerCard-text {
+  /* SELF-LAYOUT */
+  margin-top: -1px;
+  align-self: end;
+
+  /* APPEARANCE */
+  border-radius: 0 0 var(--radius-7) var(--radius-7); /* necessary to apply it here as well to avoid subpixel rendering issue */
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  background-clip: padding-box;
+  background-color: rgba(255, 255, 255, 0.65);
+  background-image: conic-gradient(
+    from 160deg at 85% 140%,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.8) 160deg,
+    rgba(0, 0, 0, 0)
+  );
+
+  /* MISCELLANEOUS */
+  transition: border-color ease 250ms;
+
+  /* TEXT */
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-7);
+  color: var(--gray-8);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  /* INNER-LAYOUT */
+  position: relative;
+  padding-inline: var(--size-9);
+  padding-block: var(--size-6);
+}
+.SheetTriggerCard-text.color\:red {
+  /* APPEARANCE */
+  background-color: rgba(255, 255, 255, 0.87);
+}
+.SheetTriggerCard-text.color\:green {
+  /* APPEARANCE */
+  background-color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 800px) {
+  .SheetTriggerCard-text {
+    /* INNER-LAYOUT */
+    padding-block: var(--size-7);
+  }
+}
+
+.SheetTriggerCard-actualText {
+  /* SELF-LAYOUT */
+  position: relative;
+  top: -0.05em; /* font adjustment */
+}
+
+.SheetTriggerCard-glow {
+  /* SELF-LAYOUT */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  /* APPEARANCE */
+  border-radius: inherit;
+  background: radial-gradient(
+    1000px circle at var(--xPos) var(--yPos),
+    rgba(255, 255, 255, 0.33),
+    transparent 35%
+  );
+
+  /* TRANSFORMATION */
+  opacity: 0;
+
+  /* MISCELLANEOUS */
+  transition: all 0.2s ease-in-out;
+}
+.SheetTriggerCard-root:hover .SheetTriggerCard-glow {
+  /* TRANSFORMATION */
+  opacity: 1;
+}
