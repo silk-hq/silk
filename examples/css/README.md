@@ -1,6 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## See In Action on CodeSandbox
 
-## Clone this Example
+See the examples in action in the [CodeSandbox](https://codesandbox.io/p/sandbox/github/silk-hq/silk/tree/main/examples/css).
+
+## Clone this Directory
 
 To quickly copy this directory locally, run:
 
@@ -11,6 +13,8 @@ npx degit silk-hq/silk/examples/css silk-examples-css
 This will download the directory into a new directory called "silk-examples-css".
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, install the dependencies:
 

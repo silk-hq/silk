@@ -26,7 +26,7 @@ Find our full documentation [here](https://silkhq.notion.site/Silk-Components-fa
 
 Find all basic examples in the [dedicated GitHub repository](https://github.com/silk-hq/basic-examples-css).
 <br />
-See them in action in the [CodeSandbox](https://codesandbox.io/p/github/silk-hq/basic-examples-css/main).
+See them in action in the [CodeSandbox](https://codesandbox.io/p/sandbox/github/silk-hq/silk/tree/main/examples/css).
 <br />
 Advanced examples are made available upon purchase of a Commercial License.
 
