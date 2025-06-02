@@ -3,31 +3,25 @@
 * {
   -webkit-tap-highlight-color: transparent; /* Removes the grey highlight on clickable elements on iOS */
   -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
-  -ms-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in IE */
+}
+
+body {
+  margin: 0;
 }
 
 button {
   user-select: none;
 }
+
 body,
 button,
 input,
 textarea {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-:focus {
-  outline: none;
-}
-:focus-visible {
-  outline: 2px solid black;
-  outline-offset: 2px;
-}
-.platform-ios :focus-visible,
-.platform-ipados :focus-visible {
-  outline: none;
-}
+/* Theme */
 
 :root {
   font-size: 16px;
@@ -86,17 +80,17 @@ textarea {
   --white: #fff;
   --black: #000;
 
-  --gray-1: rgb(249 250 251);
-  --gray-2: rgb(243 244 246);
-  --gray-3: rgb(229 231 235);
-  --gray-4: rgb(209 213 219);
-  --gray-5: rgb(156 163 175);
-  --gray-6: rgb(107 114 128);
-  --gray-7: rgb(75 85 99);
-  --gray-8: rgb(55 65 81);
-  --gray-9: rgb(31 41 55);
-  --gray-10: rgb(17 24 39);
-  --gray-11: rgb(3 7 18);
+  --gray-1: rgb(249, 250, 251);
+  --gray-2: rgb(243, 244, 246);
+  --gray-3: rgb(229, 231, 235);
+  --gray-4: rgb(209, 213, 219);
+  --gray-5: rgb(156, 163, 175);
+  --gray-6: rgb(107, 114, 128);
+  --gray-7: rgb(75, 85, 99);
+  --gray-8: rgb(55, 65, 81);
+  --gray-9: rgb(31, 41, 55);
+  --gray-10: rgb(17, 24, 39);
+  --gray-11: rgb(3, 7, 18);
 
   --slate-1: rgb(248, 250, 252);
   --slate-2: rgb(241, 245, 249);
@@ -126,8 +120,7 @@ textarea {
   --shadow-2: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-3: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-4: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-5: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-5: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --shadow-6: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 
   --font-size-1: 0.75rem; /* 12px */
@@ -168,23 +161,11 @@ textarea {
     rgba(203, 251, 246, 1),
     rgba(83, 243, 224, 1)
   );
-  --blue-scenery-2-gradient: conic-gradient(
-    from -200deg at 50% 50%,
-    rgba(83, 243, 224, 0.8),
-    rgba(203, 251, 246, 1),
-    rgba(83, 243, 224, 0.8)
-  );
-  --blue-illustration-1-gradient: conic-gradient(
+  --blue-illustration-gradient: conic-gradient(
     from -140deg at 100% 100%,
     rgba(36, 239, 215, 1),
     rgba(179, 250, 241, 1) 120deg,
     rgba(36, 239, 215, 1)
-  );
-  --blue-illustration-2-gradient: conic-gradient(
-    from -140deg at 100% 100%,
-    rgba(15, 209, 187, 1),
-    rgba(107, 245, 228, 1) 120deg,
-    rgba(15, 209, 187, 1)
   );
   --red-scenery-gradient: conic-gradient(
     from -200deg at 50% 50%,
@@ -192,46 +173,17 @@ textarea {
     rgba(247, 188, 188, 1),
     rgba(229, 54, 54, 1)
   );
-  --red-scenery-2-gradient: conic-gradient(
-    from -200deg at 50% 50%,
-    rgba(229, 54, 54, 0.75),
-    rgba(247, 188, 188, 1),
-    rgba(229, 54, 54, 0.75)
-  );
-  --red-illustration-1-gradient: conic-gradient(
+  --red-illustration-gradient: conic-gradient(
     from -140deg at 100% 100%,
     rgba(239, 36, 36, 1),
     rgba(250, 179, 179, 1) 120deg,
     rgba(239, 36, 36, 1)
   );
-  --red-illustration-2-gradient: conic-gradient(
-    from -140deg at 100% 100%,
-    rgba(209, 15, 15, 1),
-    rgba(245, 107, 107, 1) 120deg,
-    rgba(209, 15, 15, 1)
-  );
-  --green-scenery-gradient: conic-gradient(
-    from -200deg at 50% 50%,
-    #53f395,
-    #cbfbdf,
-    #53f395
-  );
-  --green-scenery-2-gradient: conic-gradient(
-    from -200deg at 50% 50%,
-    rgba(83, 243, 149, 0.8),
-    #cbfbdf,
-    rgba(83, 243, 149, 0.8)
-  );
-  --green-illustration-1-gradient: conic-gradient(
+  --green-scenery-gradient: conic-gradient(from -200deg at 50% 50%, #53f395, #cbfbdf, #53f395);
+  --green-illustration-gradient: conic-gradient(
     from -140deg at 100% 100%,
     rgba(36, 239, 87, 1),
     rgba(179, 250, 196, 1) 120deg,
     rgba(36, 239, 87, 1)
-  );
-  --green-illustration-2-gradient: conic-gradient(
-    from -140deg at 100% 100%,
-    rgba(15, 209, 64, 1),
-    rgba(107, 245, 142, 1) 120deg,
-    rgba(15, 209, 64, 1)
   );
 }

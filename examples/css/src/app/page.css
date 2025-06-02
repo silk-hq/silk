@@ -1,19 +1,17 @@
-.Home-root {
-  /* INNER-LAYOUT */
-  position: relative;
-}
-
 .Home-main {
-  /* APPEARANCE */
-  overflow: hidden;
-  overflow: clip;
-  background-color: white;
+  --topBar-height: 49px;
+
+  /* SELF-LAYOUT */
+  min-height: 150svh;
+
   /* INNER-LAYOUT */
-  position: relative;
-  padding: var(--size-10);
-  padding-top: calc(var(--size-10) + 49px);
+  padding-inline: var(--size-10);
+  padding-top: calc(env(safe-area-inset-top) + var(--topBar-height) + var(--size-16));
+  padding-bottom: var(--size-18);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-auto-rows: clamp(80px, 15svw, 20svh);
+  place-items: center;
   gap: var(--size-10);
 }
 
@@ -21,23 +19,28 @@
   /* SELF-LAYOUT */
   position: fixed;
   left: 0;
-  top: -1px;
-  z-index: 1; /* So it is above ParallaxPage, which overlaps it to avoid subpixel offset */
+  top: -1px; /* Avoids sub-pixel gap in Safari */
   width: 100%;
-  height: calc(env(safe-area-inset-top) + 49px);
-}
-
-.Home-topBarContent {
-  /* SELF-LAYOUT */
-  height: 49px;
+  height: calc(env(safe-area-inset-top) + var(--topBar-height));
 
   /* APPEARANCE */
   border-bottom: 1px solid rgba(0, 0, 0, 0.066);
   background-color: white;
+
+  /* INNER-LAYOUT */
+  display: grid;
+  align-items: end;
+}
+
+.Home-topBarContent {
+  /* SELF-LAYOUT */
+  height: var(--topBar-height);
+
   /* INNER-LAYOUT */
   padding-right: var(--x-collapsed-scrollbar-thickness);
   display: grid;
   place-items: center;
+
   /* TEXT */
   text-box: trim-both cap alphabetic;
   font-size: 17.25px;

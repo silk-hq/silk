@@ -1,0 +1,138 @@
+.ExampleSheetWithDetent-presentTrigger {
+  /* SELF-LAYOUT */
+  height: 2.75rem;
+
+  /* APPEARANCE */
+  border-radius: 9999px;
+  appearance: none;
+  border: none;
+  background-color: rgb(31, 41, 55);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* INTERACTIVITY */
+  cursor: pointer;
+
+  /* INNER-LAYOUT */
+  padding-inline: 1.25rem;
+
+  /* TEXT */
+  text-box: trim-both cap alphabetic;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ExampleSheetWithDetent-content {
+  /* INNER-LAYOUT */
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.ExampleSheetWithDetent-header {
+  /* APPEARANCE */
+  border-bottom-style: solid;
+  border-bottom-color: rgb(229, 231, 235);
+
+  /* INNER-LAYOUT */
+  border-bottom-width: 1px;
+  padding: 0 1.25rem 0.75rem;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  gap: 0.75rem;
+
+  /* TEXT */
+  font-size: 0; /* Fix Webkit bug causing space added when typing */
+}
+
+.ExampleSheetWithDetent-handle {
+  /* SELF-LAYOUT */
+  grid-area: 1 / -1;
+  margin-top: 0.5rem;
+  justify-self: center;
+  align-self: start;
+}
+
+.ExampleSheetWithDetent-input {
+  /* SELF-LAYOUT */
+  width: 100%;
+  height: 2.75rem;
+  box-sizing: border-box;
+
+  /* APPEARANCE */
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(229, 231, 235);
+
+  /* INNER-LAYOUT */
+  padding: 0 0.75rem;
+
+  /* TEXT */
+  appearance: none;
+  font-size: 1.125rem;
+  color: rgb(31, 41, 55);
+}
+
+.ExampleSheetWithDetent-input::placeholder {
+  /* TEXT */
+  color: rgb(107, 114, 128);
+}
+
+.ExampleSheetWithDetent-scrollView {
+  /* SELF-LAYOUT */
+  min-height: 0;
+}
+
+.ExampleSheetWithDetent-scrollContent {
+  /* INNER-LAYOUT */
+  padding: 1.25rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.ExampleSheetWithDetent-contactContainer {
+  /* INNER-LAYOUT */
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 0.875rem;
+}
+
+.ExampleSheetWithDetent-contactAvatar {
+  /* SELF-LAYOUT */
+  width: 3.5rem;
+  height: 3.5rem;
+
+  /* APPEARANCE */
+  border-radius: 9999px;
+  background-image: conic-gradient(
+    from -140deg at 100% 100%,
+    rgba(36, 239, 215, 1),
+    rgba(179, 250, 241, 1) 120deg,
+    rgba(36, 239, 215, 1)
+  );
+  background-origin: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ExampleSheetWithDetent-contactDetails {
+  /* INNER-LAYOUT */
+  display: grid;
+  gap: 0.125rem;
+}
+
+.ExampleSheetWithDetent-contactFullname {
+  /* SELF-LAYOUT */
+  align-self: end;
+
+  /* TEXT */
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgb(31, 41, 55);
+}
+
+.ExampleSheetWithDetent-contactCompany {
+  /* TEXT */
+  font-size: 1rem;
+  color: rgb(107, 114, 128);
+}

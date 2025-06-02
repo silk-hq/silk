@@ -1,0 +1,581 @@
+.ExampleSheetWithStacking-presentTrigger {
+  /* SELF-LAYOUT */
+  height: 2.75rem;
+
+  /* APPEARANCE */
+  border-radius: 9999px;
+  appearance: none;
+  border: none;
+  background-color: rgb(31, 41, 55);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* INTERACTIVITY */
+  cursor: pointer;
+
+  /* INNER-LAYOUT */
+  padding-inline: 1.25rem;
+
+  /* TEXT */
+  text-box: trim-both cap alphabetic;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Content */
+
+.ExampleSheetWithStacking-content {
+  height: 100%;
+
+  /* INNER-LAYOUT */
+  display: grid;
+}
+
+.ExampleSheetWithStacking-scrollRoot {
+  /* SELF-LAYOUT */
+  grid-area: 1 / 1;
+  min-height: 0;
+
+  /* INNER-LAYOUT */
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.ExampleSheetWithStacking-scrollView {
+  /* SELF-LAYOUT */
+  min-height: 0;
+
+  /* APPEARANCE */
+  border-radius: 24px 24px 0 0;
+  overflow: clip;
+}
+
+.ExampleSheetWithStacking-scrollContent {
+  /* APPEARANCE */
+  overflow: hidden;
+  overflow: clip;
+
+  /* INNER-LAYOUT */
+  position: relative;
+  display: grid;
+}
+
+.ExampleSheetWithStacking-banner {
+  /* SELF-LAYOUT */
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  aspect-ratio: 16 / 9;
+
+  /* APPEARANCE */
+  background-color: rgb(209, 213, 219);
+  object-fit: cover;
+}
+
+.ExampleSheetWithStacking-profilePicture {
+  /* SELF-LAYOUT */
+  --size: clamp(120px, 20vw, 180px);
+  margin-top: calc(var(--size) / -2);
+  justify-self: center;
+  width: var(--size);
+  height: var(--size);
+
+  /* APPEARANCE */
+  border-radius: 9999px;
+  border-color: white;
+  border-style: solid;
+  background-image: conic-gradient(
+    from -140deg at 100% 100%,
+    rgba(36, 239, 215, 1),
+    rgba(179, 250, 241, 1) 120deg,
+    rgba(36, 239, 215, 1)
+  );
+  background-origin: border-box;
+
+  /* INNER-LAYOUT */
+  border-width: 5px;
+}
+
+.ExampleSheetWithStacking-info {
+  /* SELF-LAYOUT */
+  margin-top: 0.875rem;
+  width: min(100% - 3.5rem, 350px);
+  justify-self: center;
+
+  /* INNER-LAYOUT */
+  display: grid;
+  justify-items: center;
+  gap: 0.625rem;
+}
+
+.ExampleSheetWithStacking-identification {
+  /* INNER-LAYOUT */
+  display: grid;
+  justify-items: center;
+  gap: 0.125rem;
+}
+
+.ExampleSheetWithStacking-name {
+  /* SELF-LAYOUT */
+  margin: 0;
+
+  /* TEXT */
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: rgb(31, 41, 55);
+}
+
+.ExampleSheetWithStacking-username {
+  /* TEXT */
+  line-height: 1.375;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: rgb(107, 114, 128);
+}
+
+.ExampleSheetWithStacking-metrics {
+  /* INNER-LAYOUT */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.625rem;
+}
+
+.ExampleSheetWithStacking-metric {
+  /* TEXT */
+  font-size: 1rem;
+}
+
+.ExampleSheetWithStacking-metricCount {
+  /* TEXT */
+  font-weight: 600;
+  color: rgb(31, 41, 55);
+}
+
+.ExampleSheetWithStacking-metricLabel {
+  /* TEXT */
+  font-weight: 400;
+  color: rgb(107, 114, 128);
+}
+
+.ExampleSheetWithStacking-bio {
+  /* TEXT */
+  text-align: center;
+  line-height: 1.375;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(55, 65, 81);
+}
+
+.ExampleSheetWithStacking-postsContainer {
+  /* SELF-LAYOUT */
+  margin-bottom: max(env(safe-area-inset-bottom, 0px), 2rem);
+
+  /* INNER-LAYOUT */
+  display: grid;
+}
+@media (min-width: 724px) {
+  .ExampleSheetWithStacking-postsContainer {
+    /* SELF-LAYOUT */
+    margin-bottom: 3rem;
+  }
+}
+
+.ExampleSheetWithStacking-posts {
+  /* SELF-LAYOUT */
+  margin-top: 2rem;
+  width: 100%;
+  justify-self: center;
+
+  /* APPEARANCE */
+  border-top: 1px solid rgb(229, 231, 235);
+
+  /* INNER-LAYOUT */
+  display: grid;
+}
+@media (min-resolution: 2dppx) {
+  .ExampleSheetWithStacking-posts {
+    /* APPEARANCE */
+    border-top: 0.5px solid rgb(209, 213, 219);
+  }
+}
+@media (min-width: 724px) {
+  .ExampleSheetWithStacking-posts {
+    /* SELF-LAYOUT */
+    width: clamp(507px, 85%, 600px);
+
+    /* APPEARANCE */
+    border-radius: 16px;
+    border: 1px solid rgb(229, 231, 235);
+  }
+}
+@media (min-width: 724px) and (min-resolution: 2dppx) {
+  .ExampleSheetWithStacking-posts {
+    /* APPEARANCE */
+    border: 0.5px solid rgb(209, 213, 219);
+  }
+}
+@media (min-width: 1000px) {
+  .ExampleSheetWithStacking-posts {
+    margin-top: 3rem;
+  }
+}
+
+.ExampleSheetWithStacking-post {
+  /* INNER-LAYOUT */
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+
+  /* INNER-LAYOUT */
+  padding-inline: 0.75rem;
+  padding-block: 1rem;
+}
+@media (max-width: 723px) {
+  .ExampleSheetWithStacking-post {
+    /* APPEARANCE */
+    border-bottom: 1px solid rgb(229, 231, 235);
+  }
+}
+@media (max-width: 723px) and (min-resolution: 2dppx) {
+  .ExampleSheetWithStacking-post {
+    /* APPEARANCE */
+    border-bottom: 0.5px solid rgb(209, 213, 219);
+  }
+}
+@media (min-width: 724px) {
+  .ExampleSheetWithStacking-post:not(:last-child) {
+    /* APPEARANCE */
+    border-bottom: 1px solid rgb(229, 231, 235);
+  }
+}
+@media (min-width: 724px) and (min-resolution: 2dppx) {
+  .ExampleSheetWithStacking-post:not(:last-child) {
+    /* APPEARANCE */
+    border-bottom: 0.5px solid rgb(209, 213, 219);
+  }
+}
+@media (min-width: 724px) {
+  .ExampleSheetWithStacking-post {
+    /* INNER-LAYOUT */
+    padding-inline: 1rem;
+    padding-block: 1rem;
+  }
+}
+
+.ExampleSheetWithStacking-postRepostIcon {
+  /* SELF-LAYOUT */
+  margin-block: -8px;
+  justify-self: end;
+  align-self: center;
+
+  /* TEXT */
+  color: rgb(107, 114, 128);
+}
+
+.ExampleSheetWithStacking-postRepostText {
+  /* SELF-LAYOUT */
+  align-self: center;
+
+  /* TEXT */
+  line-height: 0.95;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(107, 114, 128);
+}
+
+.ExampleSheetWithStacking-postProfilePicture {
+  /* SELF-LAYOUT */
+  width: 3rem;
+  height: 3rem;
+
+  /* APPEARANCE */
+  border-radius: 9999px;
+  background-image: conic-gradient(
+    from -140deg at 100% 100%,
+    rgba(36, 239, 215, 1),
+    rgba(179, 250, 241, 1) 120deg,
+    rgba(36, 239, 215, 1)
+  );
+  background-origin: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ExampleSheetWithStacking-postContent {
+  /* INNER-LAYOUT */
+  display: grid;
+}
+
+.ExampleSheetWithStacking-postHeader {
+  /* INNER-LAYOUT */
+  margin-bottom: 0.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: start;
+  gap: 0.375rem;
+
+  /* TEXT */
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(107, 114, 128);
+}
+
+.ExampleSheetWithStacking-postName {
+  /* TEXT */
+  font-weight: 600;
+  color: rgb(31, 41, 55);
+}
+
+.ExampleSheetWithStacking-postBody {
+  /* INNER-LAYOUT */
+  display: grid;
+  gap: 0.5rem;
+}
+
+.ExampleSheetWithStacking-postParagraph {
+  /* SELF-LAYOUT */
+  margin: 0;
+
+  /* TEXT */
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(31, 41, 55);
+}
+
+.ExampleSheetWithStacking-postActions {
+  /* SELF-LAYOUT */
+  margin-top: 0.5rem;
+
+  /* INNER-LAYOUT */
+  padding-right: 0.625rem;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+.ExampleSheetWithStacking-postAction {
+  /* INNER-LAYOUT */
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 0.375rem;
+
+  /* TEXT */
+  font-size: 0.875rem;
+  color: rgb(107, 114, 128);
+}
+
+.ExampleSheetWithStacking-relatedPages {
+  /* SELF-LAYOUT */
+  margin-inline: auto;
+  margin-top: 1.75rem;
+  width: calc(100% - 0.75rem * 2);
+
+  /* INNER-LAYOUT */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+@media (min-width: 724px) {
+  .ExampleSheetWithStacking-relatedPages {
+    /* SELF-LAYOUT */
+    width: clamp(507px, 85%, 600px);
+  }
+}
+
+/* Top Bar */
+
+.ExampleSheetWithStacking-topBar {
+  /* SELF-LAYOUT */
+  grid-area: 1 / 1;
+  width: 100%;
+  height: 56px;
+
+  /* INNER-LAYOUT */
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.5rem 1fr 3.5rem;
+  place-items: center;
+}
+.ExampleSheetWithStacking-topBar::before {
+  content: "";
+
+  /* SELF-LAYOUT */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  /* APPEARANCE */
+  border-radius: 24px 24px 0 0;
+  border-bottom: 1px solid rgb(229, 231, 235);
+  background-color: #fff;
+
+  /* TRANSFORMATION */
+  opacity: 0;
+
+  /* MISCELLANEOUS */
+  transition: opacity 200ms ease;
+}
+.ExampleSheetWithStacking-topBar.fullyVisible-true::before {
+  /* TRANSFORMATION */
+  opacity: 1;
+}
+@media (min-width: 700px) {
+  .ExampleSheetWithStacking-topBar {
+    /* SELF-LAYOUT */
+    height: 52px;
+  }
+}
+
+.ExampleSheetWithStacking-dismissTrigger {
+  /* SELF-LAYOUT */
+  grid-column: 1;
+  align-self: center;
+  width: 44px;
+  height: 44px;
+
+  /* APPEARANCE */
+  appearance: none;
+  border-radius: 9999px;
+  outline-offset: -2px;
+  border: none;
+  background-color: transparent;
+
+  /* INTERACTIVITY */
+  cursor: pointer;
+
+  /* INNER-LAYOUT */
+  padding: 0;
+  display: grid;
+  place-items: center;
+}
+@media (min-width: 700px) {
+  .ExampleSheetWithStacking-dismissTrigger {
+    /* SELF-LAYOUT */
+    grid-column: 3;
+  }
+}
+
+.ExampleSheetWithStacking-topDismissChevronIcon {
+  /* SELF-LAYOUT */
+  grid-area: 1 / -1;
+  width: 36px;
+  height: 36px;
+
+  /* APPEARANCE */
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+
+  /* TEXT */
+  color: white;
+}
+@media (min-width: 700px) {
+  .ExampleSheetWithStacking-topDismissChevronIcon {
+    /* SELF-LAYOUT */
+    display: none;
+  }
+}
+.ExampleSheetWithStacking-topDismissChevronIcon.fullyVisible-true {
+  /* APPEARANCE */
+  filter: none;
+}
+
+.ExampleSheetWithStacking-flowDismissChevronIcon {
+  /* SELF-LAYOUT */
+  grid-area: 1 / -1;
+  width: 36px;
+  height: 36px;
+
+  /* APPEARANCE */
+  color: rgb(75, 85, 99);
+
+  /* TRANSFORMATION */
+  opacity: 0;
+
+  /* MISCELLANEOUS */
+  transition: opacity 250ms ease;
+}
+@media (min-width: 700px) {
+  .ExampleSheetWithStacking-flowDismissChevronIcon {
+    /* SELF-LAYOUT */
+    display: none;
+  }
+}
+.ExampleSheetWithStacking-flowDismissChevronIcon.fullyVisible-true {
+  /* TRANSFORMATION */
+  opacity: 1;
+  transform: translateX(0.00001px); /* Workaround for Safari bug not removing the opacity */
+}
+
+.ExampleSheetWithStacking-topDismissCrossIcon {
+  /* SELF-LAYOUT */
+  grid-area: 1 / -1;
+  width: 28px;
+  height: 28px;
+
+  /* APPEARANCE */
+  stroke-width: 2.05px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+
+  /* TEXT */
+  color: white;
+}
+@media (max-width: 699px) {
+  .ExampleSheetWithStacking-topDismissCrossIcon {
+    /* SELF-LAYOUT */
+    display: none;
+  }
+}
+.ExampleSheetWithStacking-topDismissCrossIcon.fullyVisible-true {
+  /* APPEARANCE */
+  filter: none;
+}
+
+.ExampleSheetWithStacking-flowDismissCrossIcon {
+  /* SELF-LAYOUT */
+  grid-area: 1 / -1;
+  width: 28px;
+  height: 28px;
+
+  /* APPEARANCE */
+  stroke-width: 2.05px;
+  color: rgb(75, 85, 99);
+
+  /* TRANSFORMATION */
+  opacity: 0;
+
+  /* MISCELLANEOUS */
+  transition: opacity 250ms ease;
+}
+@media (max-width: 699px) {
+  .ExampleSheetWithStacking-flowDismissCrossIcon {
+    /* SELF-LAYOUT */
+    display: none;
+  }
+}
+.ExampleSheetWithStacking-flowDismissCrossIcon.fullyVisible-true {
+  /* TRANSFORMATION */
+  opacity: 1;
+  transform: translateX(0.00001px); /* Workaround for Safari bug not removing the opacity */
+}
+
+.ExampleSheetWithStacking-topBarTitle {
+  /* SELF-LAYOUT */
+  position: relative;
+
+  /* TRANSFORMATION */
+  opacity: 0;
+
+  /* MISCELLANEOUS */
+  transition: opacity 200ms ease;
+
+  /* TEXT */
+  text-box: trim-both cap alphabetic;
+  font-size: 17.25px;
+  font-weight: 620;
+  color: rgb(31, 41, 55);
+}
+.ExampleSheetWithStacking-topBar.fullyVisible-true .ExampleSheetWithStacking-topBarTitle {
+  /* TRANSFORMATION */
+  opacity: 1;
+}

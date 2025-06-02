@@ -1,0 +1,152 @@
+.ExamplePageFromBottom-presentTrigger {
+  /* SELF-LAYOUT */
+  height: 2.75rem;
+
+  /* APPEARANCE */
+  border-radius: 9999px;
+  appearance: none;
+  border: none;
+  background-color: rgb(31, 41, 55);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* INTERACTIVITY */
+  cursor: pointer;
+
+  /* INNER-LAYOUT */
+  padding-inline: 1.25rem;
+
+  /* TEXT */
+  text-box: trim-both cap alphabetic;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ExamplePageFromBottom-scrollView {
+  /* SELF-LAYOUT */
+  min-height: 0;
+  height: 100%;
+}
+
+.ExamplePageFromBottom-article {
+  /* INNER-LAYOUT */
+  display: grid;
+}
+
+.ExamplePageFromBottom-illustration {
+  /* SELF-LAYOUT */
+  width: 100%;
+  height: 45svh;
+
+  /* APPEARANCE */
+  background-image: conic-gradient(
+    from -140deg at 100% 100%,
+    rgba(36, 239, 215, 1),
+    rgba(179, 250, 241, 1) 120deg,
+    rgba(36, 239, 215, 1)
+  );
+  background-origin: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ExamplePageFromBottom-articleContent {
+  /* SELF-LAYOUT */
+  justify-self: center;
+  width: min(100% - 3rem, 800px);
+
+  /* INNER-LAYOUT */
+  padding-block: 1.75rem 2rem;
+  display: grid;
+  place-content: start;
+}
+@media (min-width: 1000px) {
+  .ExamplePageFromBottom-articleContent {
+    /* SELF-LAYOUT */
+    padding-block: 3.5rem;
+  }
+}
+
+.ExamplePageFromBottom-title {
+  /* SELF-LAYOUT */
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+
+  /* TEXT */
+  text-wrap: balance;
+  line-height: 1.25;
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: rgb(17, 24, 39);
+}
+@media (min-width: 1000px) {
+  .ExamplePageFromBottom-title {
+    /* SELF-LAYOUT */
+    margin-bottom: 1.5rem;
+
+    /* TEXT */
+    font-size: 3rem;
+  }
+}
+
+.ExamplePageFromBottom-subtitle {
+  /* SELF-LAYOUT */
+  margin: 0;
+
+  /* TEXT */
+  text-wrap: balance;
+  text-wrap: pretty;
+  line-height: 1.375;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgb(107, 114, 128);
+}
+@media (min-width: 1000px) {
+  .ExamplePageFromBottom-subtitle {
+    /* TEXT */
+    line-height: 1.375;
+    font-size: 1.5rem;
+  }
+}
+
+.ExamplePageFromBottom-author {
+  /* SELF-LAYOUT */
+  margin-top: 1rem;
+
+  /* TEXT */
+  font-size: 0.875rem;
+  color: rgb(107, 114, 128);
+}
+@media (min-width: 1000px) {
+  .ExamplePageFromBottom-author {
+    margin-top: 1.5rem;
+  }
+}
+
+.ExamplePageFromBottom-authorName {
+  /* TEXT */
+  font-weight: 500;
+  color: rgb(75, 85, 99);
+}
+
+.ExamplePageFromBottom-articleBody {
+  /* SELF-LAYOUT */
+  margin-top: 2.25rem;
+  display: grid;
+  gap: 0.75rem;
+
+  /* TEXT */
+  line-height: 1.5;
+  font-size: 1.125rem;
+  color: rgb(31, 41, 55);
+}
+@media (min-width: 1000px) {
+  .ExamplePageFromBottom-articleBody {
+    /* SELF-LAYOUT */
+    margin-top: 3.5rem;
+  }
+}
+
+.ExamplePageFromBottom-articleParagraph {
+  /* SELF-LAYOUT */
+  margin: 0;
+}

@@ -5,28 +5,28 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Silk Examples CSS",
-  description: "Native-like swipeable sheets on the web",
-  other: {
-    "apple-mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-status-bar-style": "black-translucent",
-  },
+   title: "Silk Examples – CSS",
+   description: "Examples for Silk using CSS for styling",
+   other: {
+      "apple-mobile-web-app-capable": "yes",
+      "apple-mobile-web-app-status-bar-style": "black-translucent",
+   },
 };
 export const viewport: Viewport = {
-  themeColor: "rgb(255, 255, 255)",
-  width: "device-width",
-  initialScale: 1,
-  viewportFit: "cover",
+   themeColor: "rgb(255, 255, 255)",
+   width: "device-width",
+   initialScale: 1,
+   viewportFit: "cover",
 };
 
 export default function RootLayout({
-  children,
+   children,
 }: {
-  children: React.ReactNode;
+   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
-      {children}
-    </html>
-  );
+   return (
+      <html lang="en" className={inter.className} suppressHydrationWarning>
+         <body>{children}</body>
+      </html>
+   );
 }

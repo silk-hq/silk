@@ -1,0 +1,160 @@
+.ExampleDetachedSheet-root {
+  /* INNER-LAYOUT */
+  padding: 1.5rem;
+  padding-top: 0;
+  display: grid;
+  justify-items: center;
+}
+@media (min-width: 600px) {
+  .ExampleDetachedSheet-root {
+    /* SELF-LAYOUT */
+    padding-bottom: 3rem;
+  }
+}
+
+.ExampleDetachedSheet-presentTrigger {
+  /* SELF-LAYOUT */
+  height: 2.75rem;
+
+  /* APPEARANCE */
+  border-radius: 9999px;
+  appearance: none;
+  border: none;
+  background-color: rgb(31, 41, 55);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* INTERACTIVITY */
+  cursor: pointer;
+
+  /* INNER-LAYOUT */
+  padding-inline: 1.25rem;
+
+  /* TEXT */
+  text-box: trim-both cap alphabetic;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ExampleDetachedSheet-handle {
+  /* SELF-LAYOUT */
+  grid-area: 1 / -1;
+  justify-self: center;
+  align-self: start;
+  margin-top: 0.5rem;
+}
+
+.ExampleDetachedSheet-illustration {
+  /* SELF-LAYOUT */
+  margin-top: 3rem;
+  height: 12rem;
+  width: 12rem;
+
+  /* APPEARANCE */
+  border-radius: 16px;
+  background-image: conic-gradient(
+    from -140deg at 100% 100%,
+    rgba(239, 36, 36, 1),
+    rgba(250, 179, 179, 1) 120deg,
+    rgba(239, 36, 36, 1)
+  );
+  background-origin: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 600px) {
+  .ExampleDetachedSheet-illustration {
+    /* SELF-LAYOUT */
+    margin-top: 4rem;
+    height: 14rem;
+    width: 14rem;
+  }
+}
+
+.ExampleDetachedSheet-information {
+  /* SELF-LAYOUT */
+  margin-block: 2.75rem;
+
+  /* INNER-LAYOUT */
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+@media (min-width: 600px) {
+  .ExampleDetachedSheet-information {
+    /* SELF-LAYOUT */
+    margin-block: 3rem;
+
+    /* INNER-LAYOUT */
+    gap: 1.5rem;
+  }
+}
+
+.ExampleDetachedSheet-title {
+  /* SELF-LAYOUT */
+  margin: 0;
+  justify-self: center;
+  max-width: 400px;
+
+  /* TEXT */
+  text-align: center;
+  text-wrap: balance;
+  line-height: 1.1;
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: rgb(31, 41, 55);
+}
+@media (min-width: 600px) {
+  .ExampleDetachedSheet-title {
+    /* TEXT */
+    font-size: 2.25rem;
+  }
+}
+
+.ExampleDetachedSheet-description {
+  /* SELF-LAYOUT */
+  margin: 0;
+  justify-self: center;
+  max-width: 500px;
+
+  /* TEXT */
+  text-align: center;
+  line-height: 1.375;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: rgb(107, 114, 128);
+}
+@media (min-width: 600px) {
+  .ExampleDetachedSheet-description {
+    /* TEXT */
+    font-size: 1.25rem;
+  }
+}
+
+.ExampleDetachedSheet-validateTrigger {
+  /* SELF-LAYOUT */
+  justify-self: stretch;
+  height: 3.5rem;
+
+  /* APPEARANCE */
+  border-radius: 9999px;
+  appearance: none;
+  border: none;
+  background-color: rgb(31, 41, 55);
+
+  /* INTERACTIVITY */
+  cursor: pointer;
+
+  /* INNER-LAYOUT */
+  padding-inline: 2.5rem;
+
+  /* TEXT */
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+}
+@media (min-width: 600px) {
+  .ExampleDetachedSheet-validateTrigger {
+    /* SELF-LAYOUT */
+    justify-self: center;
+  }
+}

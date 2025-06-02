@@ -1,45 +1,39 @@
 "use client";
 import React from "react";
-import { Fixed, Island } from "@silk-hq/components";
 
 import "./page.css";
-import { ExampleBottomSheet } from "@/components/examples/BottomSheet/ExampleBottomSheet";
-import { ExampleToast } from "@/components/examples/Toast/ExampleToast";
-import { ExampleSheetWithKeyboard } from "@/components/examples/SheetWithKeyboard/ExampleSheetWithKeyboard";
-import { ExampleSheetWithDetent } from "@/components/examples/SheetWithDetent/ExampleSheetWithDetent";
-import { ExampleDetachedSheet } from "@/components/examples/DetachedSheet/ExampleDetachedSheet";
-import { ExampleTopSheet } from "@/components/examples/TopSheet/ExampleTopSheet";
-import { ExampleLongSheet } from "@/components/examples/LongSheet/ExampleLongSheet";
-import { ExamplePage } from "@/components/examples/Page/ExamplePage";
-import { ExamplePageFromBottom } from "@/components/examples/PageFromBottom/ExamplePageFromBottom";
-import { ExampleSheetWithStackingData } from "@/components/examples/SheetWithStacking/ExampleSheetWithStackingData";
-import { ExampleSheetWithStacking } from "@/components/examples/SheetWithStacking/ExampleSheetWithStacking";
-import { ExampleSidebar } from "@/components/examples/Sidebar/ExampleSidebar";
-import { ExampleCard } from "@/components/examples/Card/ExampleCard";
+import { ExampleBottomSheet } from "@/components/BottomSheet/ExampleBottomSheet";
+import { ExampleToast } from "@/components/Toast/ExampleToast";
+import { ExampleSheetWithKeyboard } from "@/components/SheetWithKeyboard/ExampleSheetWithKeyboard";
+import { ExampleSheetWithDetent } from "@/components/SheetWithDetent/ExampleSheetWithDetent";
+import { ExampleDetachedSheet } from "@/components/DetachedSheet/ExampleDetachedSheet";
+import { ExampleTopSheet } from "@/components/TopSheet/ExampleTopSheet";
+import { ExampleLongSheet } from "@/components/LongSheet/ExampleLongSheet";
+import { ExamplePage } from "@/components/Page/ExamplePage";
+import { ExamplePageFromBottom } from "@/components/PageFromBottom/ExamplePageFromBottom";
+import { ExampleSheetWithStacking } from "@/components/SheetWithStacking/ExampleSheetWithStacking";
+import { ExampleSidebar } from "@/components/Sidebar/ExampleSidebar";
+import { ExampleCard } from "@/components/Card/ExampleCard";
 
 export default function Home() {
   return (
-    <React.StrictMode>
-      <body className="Home-root">
-        <main className="Home-main">
-          <ExampleBottomSheet />
-          <ExampleTopSheet />
-          <ExampleDetachedSheet />
-          <ExampleCard />
-          <ExampleSidebar />
-          <ExampleToast />
-          <ExampleSheetWithStacking data={ExampleSheetWithStackingData} />
-          <ExampleSheetWithDetent />
-          <ExampleSheetWithKeyboard />
-          <ExampleLongSheet />
-          <ExamplePage />
-          <ExamplePageFromBottom />
+    <main className="Home-main">
+      <ExampleBottomSheet />
+      <ExampleTopSheet />
+      <ExampleDetachedSheet />
+      <ExampleCard />
+      <ExampleSidebar />
+      <ExampleToast />
+      <ExampleSheetWithStacking />
+      <ExampleSheetWithDetent />
+      <ExampleSheetWithKeyboard />
+      <ExampleLongSheet />
+      <ExamplePage />
+      <ExamplePageFromBottom />
 
-          <div className="Home-topBar">
-            <div className="Home-topBarContent">Silk</div>
-          </div>
-        </main>
-      </body>
-    </React.StrictMode>
+      <div className="Home-topBar">
+        <div className="Home-topBarContent">Silk</div>
+      </div>
+    </main>
   );
 }
