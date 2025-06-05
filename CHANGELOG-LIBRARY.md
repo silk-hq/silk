@@ -1,4 +1,14 @@
-# Changelog
+# Changelog — Library
+
+## v0.9.6
+
+**Release date**: 2025-06-05
+
+- Fix `<Sheet.Handle>` not correctly rendering its potential children.
+- Remove focus outline from internal the Scroll component underlying scroll container.
+- Expand `<Sheet.Portal>` container prop types to let it accept `null`
+- Expand `animate` first argument’s types to let it accept `null`
+- Expand `useThemeColorDimmingOverlay`'s `elementRef`'s type to let it accept `undefined`
 
 ## v0.9.5
 
