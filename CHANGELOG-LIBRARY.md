@@ -1,5 +1,11 @@
 # Changelog — Library
 
+## v0.9.7
+
+**Release date**: 2025-06-18
+
+- Update the website’s domain name in all files.
+
 ## v0.9.6
 
 **Release date**: 2025-06-05
