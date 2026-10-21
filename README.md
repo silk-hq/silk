@@ -31,7 +31,7 @@ Need help or want to chat about how you're using Silk? Join the conversation on 
 
 ## Documentation
 
-Find our full documentation [here](https://silkhq.notion.site/Silk-Components-fad7232e08a24cf6bf9008749cc09879).
+Find our full documentation [here](https://silkhq.com/docs).
 
 ## General Info
 
