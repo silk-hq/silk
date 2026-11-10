@@ -19,19 +19,19 @@ Advanced examples are made available upon purchase of a Commercial License.
 
 ## Bug Reports
 
-Encountered an issue with Silk? Let us know by opening a ticket on the [Issues page](https://github.com/silk-hq/community/issues).
+Encountered an issue with Silk? Let us know by opening a ticket on the [Issues page](https://github.com/silk-hq/silk/issues).
 
 ## Feature Requests
 
-Is something missing from Silk that you need? Let us know by submitting a feature request on the [Issues page](https://github.com/silk-hq/community/issues).
+Is something missing from Silk that you need? Let us know by submitting a feature request on the [Issues page](https://github.com/silk-hq/silk/issues).
 
 ## Questions & Discussions
 
-Need help or want to chat about how you're using Silk? Join the conversation on the [Discussions page](https://github.com/silk-hq/community/discussions).
+Need help or want to chat about how you're using Silk? Join the conversation on the [Discussions page](https://github.com/silk-hq/silk/discussions).
 
 ## Documentation
 
-Find our full documentation [here](https://silkhq.notion.site/Silk-Components-fad7232e08a24cf6bf9008749cc09879).
+Find our full documentation on [silkhq.com/docs](https://silkhq.com/docs).
 
 ## General Info
 

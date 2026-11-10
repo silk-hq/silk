@@ -1,12 +1,12 @@
 # Changelog — Library
 
-# v0.10.1
+## v0.10.1
 
 **Release date**: 2026-02-10
 
 - Improve the safety of internal styles by protecting them from global style overrides.
 
-# v0.10.0 (breaking change)
+## v0.10.0 (breaking change)
 
 **Release date**: 2025-10-21
 
@@ -62,7 +62,7 @@
 - Remove focus outline from internal the Scroll component underlying scroll container.
 - Expand `<Sheet.Portal>` container prop types to let it accept `null`
 - Expand `animate` first argument’s types to let it accept `null`
-- Expand `useThemeColorDimmingOverlay`'s `elementRef`'s type to let it accept `undefined`
+- Expand `useThemeColorDimmingOverlay`'s `elementRef`’s type to let it accept `undefined`.
 
 ## v0.9.5
 
@@ -82,21 +82,21 @@
 
 **Release date**: 2025-05-02
 
-- Fix `onClickOutside` event being triggered when a click occurred on an element inside of `<Sheet.View>` whose ancestor DOM node was removed from the DOM at the same time. https://github.com/silk-hq/silk/issues/51
+- Fix `onClickOutside` event being triggered when a click occurred on an element inside of `<Sheet.View>` whose ancestor DOM node was removed from the DOM at the same time. [#51](https://github.com/silk-hq/silk/issues/51)
 
 ## v0.9.1
 
 - Fix “scroll-by” being interpreted as “scroll-to” in `<Scroll.Trigger>` `action` prop.
-- Fix descendant element animation starting during the `entering` phase and ongoing during the `idleInside` phase preventing interaction with the sheet. https://github.com/silk-hq/silk/issues/33
-- Fix `touchstart` and `touchend` events not propagating to thrid-party HTML elements. https://github.com/silk-hq/silk/issues/50
+- Fix descendant element animation starting during the `entering` phase and ongoing during the `idleInside` phase preventing interaction with the sheet. [#33](https://github.com/silk-hq/silk/issues/33)
+- Fix `touchstart` and `touchend` events not propagating to third-party HTML elements. [#50](https://github.com/silk-hq/silk/issues/50)
 
 ## v0.9.0 (breaking change)
 
-- Change the way Silk low-level CSS styles are imported. Follow the [migration guide](https://www.notion.so/Silk-Migrating-from-v0-8-x-to-v0-9-x-1dc894277f3a806e8b6ad22837c9bcf3?pvs=21) on how to import them.
+- Change the way Silk low-level CSS styles are imported. Follow the [migration guide](https://silkhq.com/docs/from-v0-8-x-to-v0-9-x) on how to import them.
 - Add a warning in the console when Silk CSS styles are not detected.
 - Fix `onClickOutside` event being triggered when a click occurred on an element inside of `<Sheet.View>` that was removed from the DOM at the same time.
 - Fix `onClickOutside` event being triggered when a click occurred on an element inside of a third-party overlay component.
-- Fix error when the user presses the `escape` key when an `<ExternalOverlay />` is in use.
+- Fix error when the user presses the `escape` key when an `<ExternalOverlay>` is in use.
 - Remove useLayoutEffect warnings in some environments.
 
 ## v0.8.15
@@ -107,6 +107,6 @@
 
 - Throw a proper error when the `theme-color` meta-tag is not set when the `themeColorDimming` prop on Sheet.Backdrop is used. [#13](https://github.com/silk-hq/silk/issues/13)
 - Throw a proper error when the `theme-color` meta-tag is not using the `rgb()` format for its content when using the `themeColorDimming` prop on Sheet.Backdrop is used. [#18](https://github.com/silk-hq/silk/issues/18)
-- Fix the types not being applied to the `<Sheet.Root />` component. [#17](https://github.com/silk-hq/silk/issues/17)
+- Fix the types not being applied to the `<Sheet.Root>` component. [#17](https://github.com/silk-hq/silk/issues/17)
 - Remove unnecessary peerDepencies. [#27](https://github.com/silk-hq/silk/issues/27)
 - Fix invalid CSS. [#12](https://github.com/silk-hq/silk/issues/12)
