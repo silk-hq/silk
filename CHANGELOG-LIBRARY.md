@@ -1,5 +1,14 @@
 # Changelog — Library
 
+## v0.10.2
+
+**Release date**: 2026-11-12
+
+- Fix the `displayName` of `<Scroll.Trigger>`, which React DevTools showed as `Sheet.Trigger`.
+- Fix `scrollTimelineName` and `scrollPadding` on a `<Scroll.View>` with `pageScroll` when native page scroll isn't replaced: they had no effect on the page's scroll.
+- Fix a page that overflows sideways jumping horizontally while a sheet is open.
+- Fix `onTravel` receiving a `range` without `start` and `end` when the entering or stepping animation is skipped (`skip: true`).
+
 ## v0.10.1
 
 **Release date**: 2026-02-10
