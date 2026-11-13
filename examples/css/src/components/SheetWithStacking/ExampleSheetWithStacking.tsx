@@ -194,9 +194,7 @@ const ExampleSheetWithStackingView = ({ data: propsData }: any) => {
                           <div className="ExampleSheetWithStacking-postProfilePicture" />
                           <div className="ExampleSheetWithStacking-postContent">
                             <div className="ExampleSheetWithStacking-postHeader">
-                              <div className="ExampleSheetWithStacking-postName">
-                                {post.username}
-                              </div>
+                              <div className="ExampleSheetWithStacking-postName">{post.name}</div>
                               <div>@{post.username}</div>
                               <div>·</div>
                               <div>{post.hoursPast}h</div>
