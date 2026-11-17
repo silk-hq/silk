@@ -1,5 +1,15 @@
 # Changelog — Library
 
+## v0.10.3
+
+**Release date**: 2026-11-17
+
+- Fix an error thrown when a `<Scroll.View>` unmounts shortly after it mounts or scrolls, for example on a route change. [#122](https://github.com/silk-hq/silk/issues/122)
+- Fix errors thrown in Safari when a sheet whose `<Sheet.Backdrop>` has `themeColorDimming="auto"` unmounts while it's open, opening or closing, for example on a route change. Some reached the app's error boundary. The theme color is restored. [#122](https://github.com/silk-hq/silk/issues/122) [#129](https://github.com/silk-hq/silk/issues/129)
+- Fix errors thrown in Safari when a component using `useThemeColorDimmingOverlay` unmounts while `animateDimmingOverlayOpacity` is running. The theme color is restored, and an element that outlives the component finishes its animation.
+- Fix the theme color not following `animateDimmingOverlayOpacity` from `useThemeColorDimmingOverlay` in Safari: an animation started as the component mounts didn't dim it, and the animated dimming was lost when `dimmingColor` changed or an `<Activity>` hid then showed the component.
+- Fix `<Sheet.Outlet>` and `<SheetStack.Outlet>` animations skipped when a sheet starts to open or close while the Outlet re-renders with a new `stackingAnimation` or `travelAnimation` object, for example when the URL changes as the sheet is dismissed. The element stayed still: it didn't follow a sheet as it opened, stayed stacked when the sheet above it closed, or jumped to its final state at the end of a dismissal.
+
 ## v0.10.2
 
 **Release date**: 2026-11-12
