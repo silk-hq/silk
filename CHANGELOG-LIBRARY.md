@@ -1,5 +1,16 @@
 # Changelog — Library
 
+## v0.10.4
+
+**Release date**: 2026-11-25
+
+- Fix Silk not working on React 17: sheets and sheet stacks threw an error as they rendered, so nothing appeared.
+- Fix a closed sheet's `<Sheet.View>` never unmounting while the sheet keeps re-rendering, for example with a clock or a countdown inside it. It now unmounts a few seconds after closing, as it does when nothing re-renders.
+- Fix a sheet getting stuck in Chrome, Edge and Firefox when it closes or steps by less than about a pixel, for example a sheet whose content is about 1px tall, or a step between two detents of the same size in different units (`50vh` and `448px` on an 896px-tall screen). An error was thrown, the travel never ended, and the sheet's view stayed over the page, which no longer responded to clicks. [#104](https://github.com/silk-hq/silk/issues/104)
+- Fix the page freezing, then an error, when a sheet whose content is 0px tall is presented, for example while its content loads. Such a sheet now presents, steps and dismisses like any other, with its backdrop dimmed, and `onTravel` reports a `progress` of 0 to 1 instead of `NaN`. [#104](https://github.com/silk-hq/silk/issues/104)
+- `travelAnimation` and `stackingAnimation` now end exactly on their final values after a spring animation, instead of slightly short of them.
+- Clarify in the API documentation that `forComponent` selects an ancestor Root for Sheet and Scroll sub-components, and explain how `<Island.Root>` can target sheets and stacks from outside their Roots. [#128](https://github.com/silk-hq/silk/issues/128)
+
 ## v0.10.3
 
 **Release date**: 2026-11-17
